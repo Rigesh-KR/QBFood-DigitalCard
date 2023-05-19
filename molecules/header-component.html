@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- styles -->
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- body content start -->
+    <!-- <div id="headerContent" [innerHTML]="contentDetails">
+</div> -->
+    <div id="headerContent">
+        <header class="qb-header"><!---->
+            <nav class="navbar navbar-expand-lg">
+                <div class="logo-wrap">
+                    <div class="qb-header__sticky-menu">
+                        <div class="qb-header__sticky-menu-icon"><span class="qb-header__sticky-menu-line"></span><span
+                                class="qb-header__sticky-menu-line"></span><span
+                                class="qb-header__sticky-menu-line"></span></div>
+                        <div class="qb-header__sticky-menu-expan"><a title="Best Sellers"
+                                class="qb-header__sticky-menu-link"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Capa_1" data-name="Capa 1">
+                                            <path
+                                                d="M303,61.58A10,10,0,1,0,298.34,81,179.4,179.4,0,0,1,436,256c0,99.25-80.75,180-180,180S76,355.25,76,256A179.41,179.41,0,0,1,213.65,81,10,10,0,1,0,209,61.58,201,201,0,0,0,99.58,131.37,197.84,197.84,0,0,0,56,256c0,110.28,89.72,200,200,200s200-89.72,200-200a197.84,197.84,0,0,0-43.58-124.63A201,201,0,0,0,303,61.58Z">
+                                            </path>
+                                            <path
+                                                d="M506,232l-11.7-21.83,2-27A51.08,51.08,0,0,0,477.75,138l-19.42-15.9-7.64-23a51.4,51.4,0,0,0-35-37l-24-7.24L373.38,33.6a51.18,51.18,0,0,0-44-17.78L304.52,18.3,280.06,6A51,51,0,0,0,232,6l-21.83,11.7-27-2A51.08,51.08,0,0,0,138,34.25l-15.9,19.42L99,61.31a51.37,51.37,0,0,0-37,35l-7.25,24L33.6,138.62a51.18,51.18,0,0,0-17.78,44l2.48,24.88L6,231.94a51,51,0,0,0,0,48.12l11.7,21.82-2,27a51.07,51.07,0,0,0,18.48,45.18L53.67,390l7.64,23a51.4,51.4,0,0,0,35,37l24,7.24,18.36,21.22a51.18,51.18,0,0,0,44,17.78l24.88-2.48L231.94,506a51,51,0,0,0,48.11,0l21.83-11.69,27,2a51.08,51.08,0,0,0,45.19-18.48L390,458.33l23-7.64a51.4,51.4,0,0,0,37-35l7.24-24,21.22-18.36a51.18,51.18,0,0,0,17.78-44l-2.48-24.88L506,280.07A51,51,0,0,0,506,232Zm-17.7,38.78c0,.09-.09.17-.13.25l-13.62,27.16a10.1,10.1,0,0,0-1,5.48l2.77,27.75a31.18,31.18,0,0,1-10.9,26.83L441.9,378.51a10,10,0,0,0-3,4.67l-8.08,26.75A31.33,31.33,0,0,1,408,431.32c-.29.07-.59.16-.88.25l-26.17,8.69a10,10,0,0,0-4.59,3.15l-17.74,21.67a31.13,31.13,0,0,1-27.68,11.25l-.39,0-30.07-2.17a10,10,0,0,0-5.44,1.16l-24.37,13.06a31,31,0,0,1-29.35-.06l-.25-.13-27.16-13.62a10,10,0,0,0-4.49-1.06c-.33,0-.66,0-1,0l-27.75,2.77a31.2,31.2,0,0,1-26.83-10.9L133.49,441.9a10,10,0,0,0-4.67-3l-26.75-8.08A31.33,31.33,0,0,1,80.68,408c-.07-.29-.15-.59-.25-.88L71.74,380.9a10,10,0,0,0-3.15-4.59L46.92,358.57a31.14,31.14,0,0,1-11.25-27.68c0-.13,0-.26,0-.39l2.17-30.07A9.9,9.9,0,0,0,36.72,295L23.66,270.63a31.07,31.07,0,0,1,.06-29.36c0-.08.09-.16.13-.25l13.62-27.16a10.07,10.07,0,0,0,1-5.48l-2.77-27.75a31.18,31.18,0,0,1,10.9-26.83L70.1,133.49a10,10,0,0,0,3-4.67l8.08-26.75a31.33,31.33,0,0,1,22.84-21.39c.3-.07.59-.16.88-.25l26.17-8.69a10,10,0,0,0,4.59-3.15l17.74-21.67a31.13,31.13,0,0,1,27.68-11.25l.4,0,30.06,2.17A9.92,9.92,0,0,0,217,36.72l24.36-13.06a31,31,0,0,1,29.36.06l.25.13,27.16,13.62a10,10,0,0,0,5.48,1l27.75-2.76a31.2,31.2,0,0,1,26.83,10.9L378.51,70.1a10,10,0,0,0,4.67,3l26.75,8.08a31.33,31.33,0,0,1,21.39,22.84c.07.29.15.59.25.88l8.69,26.17a10,10,0,0,0,3.15,4.59l21.67,17.74a31.12,31.12,0,0,1,11.25,27.68c0,.13,0,.26,0,.39l-2.17,30.07a9.9,9.9,0,0,0,1.16,5.44l13.06,24.37a31,31,0,0,1-.06,29.35Z">
+                                            </path>
+                                            <path
+                                                d="M212.6,201.52a10,10,0,0,0-9-5.73H150.74a10,10,0,0,0-10,10V357.16a10,10,0,0,0,10,10h52.83a10,10,0,0,0,9.22-6.12c7.62,1.07,15.47,3.24,23.65,5.51,12.29,3.4,25,6.92,38.21,6.92h57.73c17.84,0,32.3-9.46,38.68-25.31,3.11-7.72,3.65-15.74,1.83-22.45a36,36,0,0,0,8.25-11,38.08,38.08,0,0,0,2.72-27,37.41,37.41,0,0,0,9.86-35.18,30.12,30.12,0,0,0,5.76-47.91A31.26,31.26,0,0,0,377.79,196H296.42c-6.19-7.76-8.11-18.28-4.59-26.75,7.22-17.39,6.78-32.1-1.45-47.72-6.11-11.59-22.52-23.12-36.32-21.15-8.34,1.19-14.38,7.08-16.15,15.77a59.14,59.14,0,0,0-.83,8.51c-.41,7.88-1,18.68-7.77,31.72-4.61,8.84-6.15,17.93-7.51,26-2,11.49-2.89,17-9.2,19.15Zm-51.86,14.27h32.83V347.16H160.74Zm80.78-30.08c1.16-6.88,2.37-14,5.52-20,8.82-16.9,9.57-31.32,10-39.94a51.25,51.25,0,0,1,.45-5.55v0c3.47,0,12,4.73,15.18,10.74,5.47,10.39,5.66,18.72.67,30.72-4.49,10.82-4.16,23.37.29,34.53A10,10,0,0,0,275,216H377.79a11.37,11.37,0,0,1,7.9,3,10.2,10.2,0,0,1,3.13,7.62c0,5.36-4.92,10-10.74,10.13l-25.74.56a10,10,0,0,0,.22,20h.22l21.43-.47a16.26,16.26,0,0,1-.4,10.09c-1.26,3.68-4.62,9.86-13.08,9.86a10,10,0,0,0,0,20,36.33,36.33,0,0,0,4.46-.28,19.68,19.68,0,0,1-2,9.32c-1.84,3.75-5.47,8.22-12.33,8.22a10,10,0,0,0,0,20c1,0,2.06,0,3.07-.13a18.63,18.63,0,0,1-1.51,6.94c-1.56,3.77-6.66,12.55-20,12.55H274.65c-10.49,0-21.36-3-32.87-6.2-9.16-2.53-18.55-5.13-28.2-6.29V221.75C236.09,217.67,239.19,199.45,241.52,185.71Z">
+                                            </path>
+                                            <path d="M256,76a10,10,0,0,0,0-20h0a10,10,0,0,0,0,20Z"></path>
+                                        </g>
+                                    </g>
+                                </svg>Best Sellers</a><a title="Special Offers" class="qb-header__sticky-menu-link"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.83 494.35">
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Capa_1" data-name="Capa 1">
+                                            <path
+                                                d="M211.26,459.56a40,40,0,0,1-28.48-11.86L11.72,275.81a40.23,40.23,0,0,1,.14-56.91l188.87-188A10.49,10.49,0,0,1,206.4,28L359.23,2.47a10.48,10.48,0,0,1,9.1,2.87l83.58,82.3a10.51,10.51,0,0,1,3,8.77L436.17,249.16a10.51,10.51,0,0,1-3,6.16L239.68,447.85A40.26,40.26,0,0,1,211.26,459.56Zm1.91-411.38L26.67,233.79A19.23,19.23,0,0,0,26.6,261l171.06,171.9a19.19,19.19,0,0,0,27.21.07l190.9-190L433.49,99,357.41,24.06Z">
+                                            </path>
+                                            <path
+                                                d="M468.59,494.35H226.07a40.29,40.29,0,0,1-40.24-40.24V445A10.5,10.5,0,0,1,201.62,436a19.26,19.26,0,0,0,23.25-3l190.9-190,16.48-134a10.5,10.5,0,0,1,18.69-5.2l55.65,70.9a10.5,10.5,0,0,1,2.24,6.48V454.11A40.29,40.29,0,0,1,468.59,494.35Zm-261-35a19.28,19.28,0,0,0,18.5,14H468.59a19.26,19.26,0,0,0,19.24-19.24V184.8L450,136.62,436.17,249.16a10.51,10.51,0,0,1-3,6.16L239.68,447.85A40.3,40.3,0,0,1,207.57,459.39Z">
+                                            </path>
+                                            <path
+                                                d="M370,100a10.5,10.5,0,0,1-7.43-17.92l79-79a10.5,10.5,0,0,1,14.84,14.85l-79,79A10.45,10.45,0,0,1,370,100Z">
+                                            </path>
+                                            <path
+                                                d="M392.69,122.67a10.49,10.49,0,0,1-7.43-3.07L339.9,74.23a10.5,10.5,0,0,1,14.85-14.84l45.36,45.36a10.5,10.5,0,0,1-7.42,17.92Z">
+                                            </path>
+                                            <path
+                                                d="M296.61,280.27H296a41.57,41.57,0,0,1-40.82-40.82,39.56,39.56,0,0,1,40.27-40.27A41.57,41.57,0,0,1,336.3,240a39.55,39.55,0,0,1-39.69,40.27Zm-1.7-60.1a18.57,18.57,0,0,0-18.7,19,20.57,20.57,0,0,0,20.11,20.11,18.56,18.56,0,0,0,19-19,20.57,20.57,0,0,0-20.11-20.11Z">
+                                            </path>
+                                            <path
+                                                d="M128.43,278.21h-.59A41.14,41.14,0,0,1,99.2,266c-16-16-16.24-41.69-.59-57.34s41.36-15.38,57.34.59h0c16,16,16.23,41.7.59,57.34A39.44,39.44,0,0,1,128.43,278.21Zm-1.7-60.09a18.68,18.68,0,0,0-13.28,5.42c-7.45,7.46-7.19,19.86.6,27.64a20.23,20.23,0,0,0,14.09,6,18.75,18.75,0,0,0,13.55-5.43c7.46-7.45,7.19-19.85-.59-27.64A20.35,20.35,0,0,0,126.73,218.12Z">
+                                            </path>
+                                            <path
+                                                d="M187.09,348.36a10.23,10.23,0,0,1-2.5-.3,10.49,10.49,0,0,1-7.71-12.69l47.71-195.09a10.5,10.5,0,1,1,20.4,5L197.28,340.35A10.49,10.49,0,0,1,187.09,348.36Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>Special Offers</a><a title="Bulk Buy"
+                                class="qb-header__sticky-menu-link bulk-icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 511.31 442.7">
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Capa_1" data-name="Capa 1">
+                                            <circle cx="200.73" cy="395.92" r="37.79" class="cls-1"></circle>
+                                            <circle cx="395.75" cy="395.92" r="37.79" class="cls-1"></circle>
+                                            <polyline points="9 44.74 51.43 44.74 132.2 354.54 502.31 354.54"
+                                                class="cls-2"></polyline>
+                                            <polygon
+                                                points="480.03 108.12 67.95 108.12 117.23 297.13 433.68 297.13 480.03 108.12"
+                                                class="cls-2"></polygon>
+                                            <rect x="138.62" y="44.74" width="78.93" height="63.38" class="cls-2">
+                                            </rect>
+                                            <rect x="217.55" y="9" width="192.73" height="99.12" class="cls-2"></rect>
+                                            <line x1="162.94" y1="108.12" x2="208.37" y2="297.13" class="cls-2"></line>
+                                            <line x1="278.12" y1="108.12" x2="278.12" y2="297.13" class="cls-2"></line>
+                                            <line x1="395.75" y1="108.12" x2="350.63" y2="297.13" class="cls-2"></line>
+                                            <line x1="92.59" y1="202.63" x2="457.05" y2="202.63" class="cls-2"></line>
+                                        </g>
+                                    </g>
+                                </svg>Bulk Buy</a><a title="Available Slots" class="qb-header__sticky-menu-link"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445.52 412.42">
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Capa_1" data-name="Capa 1">
+                                            <rect x="67.02" y="163.86" width="34.74" height="34.74"></rect>
+                                            <rect x="136.49" y="163.86" width="34.74" height="34.74"></rect>
+                                            <rect x="205.97" y="163.86" width="34.74" height="34.74"></rect>
+                                            <rect x="275.45" y="163.86" width="34.74" height="34.74"></rect>
+                                            <rect x="344.92" y="163.86" width="34.74" height="34.74"></rect>
+                                            <rect x="67.02" y="233.34" width="34.74" height="34.74"></rect>
+                                            <rect x="136.49" y="233.34" width="34.74" height="34.74"></rect>
+                                            <rect x="205.97" y="233.34" width="34.74" height="34.74"></rect>
+                                            <rect x="275.45" y="233.34" width="34.74" height="34.74"></rect>
+                                            <rect x="67.02" y="302.81" width="34.74" height="34.74"></rect>
+                                            <rect x="136.49" y="302.81" width="34.74" height="34.74"></rect>
+                                            <rect x="205.97" y="302.81" width="34.74" height="34.74"></rect>
+                                            <rect x="275.45" y="302.81" width="34.74" height="34.74"></rect>
+                                            <rect x="344.92" y="233.34" width="34.74" height="34.74"></rect>
+                                            <path
+                                                d="M47,412.42a47,47,0,0,1-47-47V75.06a47,47,0,0,1,47-47H398.54a47,47,0,0,1,47,47V365.45a47,47,0,0,1-47,47Zm0-360.2A22.86,22.86,0,0,0,24.14,75.06V365.45A22.85,22.85,0,0,0,47,388.28H398.54a22.86,22.86,0,0,0,22.84-22.83V75.06a22.87,22.87,0,0,0-22.84-22.84Z">
+                                            </path>
+                                            <path
+                                                d="M398.54,49.22a25.87,25.87,0,0,1,25.84,25.84V365.45a25.86,25.86,0,0,1-25.84,25.83H47a25.86,25.86,0,0,1-25.83-25.83V75.06A25.86,25.86,0,0,1,47,49.22H398.54m0-18.14H47a44,44,0,0,0-44,44V365.45a44,44,0,0,0,44,44H398.54a44,44,0,0,0,44-44V75.06a44,44,0,0,0-44-44Z">
+                                            </path>
+                                            <path
+                                                d="M16.76,122.68a12.07,12.07,0,0,1,0-24.14H431.43a12.07,12.07,0,0,1,0,24.14Z">
+                                            </path>
+                                            <path
+                                                d="M431.43,119.68H16.76a9.07,9.07,0,0,1,0-18.14H431.43a9.07,9.07,0,0,1,0,18.14Z">
+                                            </path>
+                                            <rect x="87.74" width="23.22" height="73.09"></rect>
+                                            <rect x="333.77" width="23.22" height="73.09"></rect>
+                                        </g>
+                                    </g>
+                                </svg> Available Slots</a><a title="About Us" class="qb-header__sticky-menu-link"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.29 333.72">
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Capa_1" data-name="Capa 1">
+                                            <path
+                                                d="M256.47,162.25h-.15a81.21,81.21,0,0,1-81-81.12V81A81.24,81.24,0,0,1,256.47,0h.15a81.13,81.13,0,0,1-.15,162.25Zm0-142.3A61.24,61.24,0,0,0,195.29,81v.12a61.24,61.24,0,0,0,61.06,61.17h.12A61.18,61.18,0,0,0,256.58,20Z">
+                                            </path>
+                                            <path
+                                                d="M358.74,333.72H153.56l-.48-9s0-.07,0-.1a16.36,16.36,0,0,1-.72-4.6V205.5c0-28.45,21.11-51.6,47.06-51.6H313.46a44.65,44.65,0,0,1,31.67,13.51,54,54,0,0,1,15.28,38.12V320.05a17.73,17.73,0,0,1-.64,4.49c0,.13-.07.26-.1.39Zm-186.46-20H340.46V205.5a33.9,33.9,0,0,0-9.46-24,24.84,24.84,0,0,0-17.54-7.64H199.4c-15,0-27.12,14.2-27.12,31.65Z">
+                                            </path>
+                                            <path
+                                                d="M426,196.21h-.15a66.92,66.92,0,0,1-66.86-67v-.14A67.08,67.08,0,0,1,426,62.2h.15a67,67,0,0,1-.14,134Zm0-114.07a47.06,47.06,0,0,0-47,47v.13a47,47,0,0,0,46.92,47H426a47.06,47.06,0,0,0,.1-94.12Z">
+                                            </path>
+                                            <path
+                                                d="M510.13,333.69H341.56l-.5-8.93a15,15,0,0,1-.6-4.05V229c0-23.93,17.85-43.4,39.79-43.4H471.6A37.81,37.81,0,0,1,498.47,197a45.28,45.28,0,0,1,12.82,32v91.71a15.45,15.45,0,0,1-.56,4v.08ZM360.41,313.74H491.34V229a25.23,25.23,0,0,0-7-17.89,18,18,0,0,0-12.74-5.57H380.25c-10.94,0-19.84,10.53-19.84,23.46Z">
+                                            </path>
+                                            <path
+                                                d="M85.5,196.21h-.14a66.94,66.94,0,0,1-66.87-67v-.11a67,67,0,0,1,67-66.91h.12a67,67,0,0,1-.11,134Zm0-114.07a47.06,47.06,0,0,0-47,47v.11a47,47,0,0,0,46.93,47h.13a47.06,47.06,0,0,0,.07-94.12Z">
+                                            </path>
+                                            <path
+                                                d="M169.69,333.69H1.42l-.79-8.81A15.1,15.1,0,0,1,0,320.71V229c0-23.93,17.8-43.4,39.68-43.4h91.5A37.69,37.69,0,0,1,158,197a45.34,45.34,0,0,1,12.86,32v91.73a15.68,15.68,0,0,1-.52,3.87l0,.12ZM20,313.74H150.87V229a25.24,25.24,0,0,0-7-17.91,17.91,17.91,0,0,0-12.66-5.55H39.68C28.8,205.5,20,216,20,229Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>About Us</a><a title="Brand Partners" class="qb-header__sticky-menu-link"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 379.55">
+                                    <g id="Layer_2" data-name="Layer 2">
+                                        <g id="Capa_1" data-name="Capa 1">
+                                            <path
+                                                d="M509.6,104.85,410.3,5.55a8.16,8.16,0,0,0-11.56,0L349.09,55.2a8.18,8.18,0,0,0,0,11.56l5,4.95L342.66,83.09a25.56,25.56,0,0,1-28.53,5,70.55,70.55,0,0,0-63,2.34,55,55,0,0,0-32,1.7,25.44,25.44,0,0,1-27-5.67L171.71,66l2.43-2.43a8.16,8.16,0,0,0,0-11.56L124.49,2.4a8.16,8.16,0,0,0-11.56,0L2.39,112.93a8.18,8.18,0,0,0,0,11.56L52,174.14a8.17,8.17,0,0,0,11.57,0l3-3L81,185.6a25,25,0,0,1,7,13.13,128.31,128.31,0,0,0,35.57,67.52l2.71,2.72a29.41,29.41,0,0,0,21.35,49.66c.49,0,1,0,1.47,0a29.41,29.41,0,0,0,29.38,30.9h.66a29.41,29.41,0,0,0,50.21,21.45c.47-.47.91-.95,1.34-1.44A27.38,27.38,0,0,0,259.14,363a27.18,27.18,0,0,0,6.21-9.53l.84.84a27.51,27.51,0,0,0,45.22-9.88,27.51,27.51,0,0,0,42.88-28.74,27.5,27.5,0,0,0,16.89-42.85l6.56-6.56a128.34,128.34,0,0,0,35.72-68.37,22.06,22.06,0,0,1,6.24-11.71l24.4-24.4,4.29,4.29a8.17,8.17,0,0,0,11.57,0l49.65-49.65a8.17,8.17,0,0,0,0-11.56Zm-451.77,52L19.74,118.71l99-99L156.8,57.83Zm99,141.66a13.07,13.07,0,1,1,0-18.49A13.1,13.1,0,0,1,156.84,298.46Zm30.84,30.85a13.08,13.08,0,1,1,0-18.49A13,13,0,0,1,187.68,329.31Zm30.06,30.06a13.07,13.07,0,1,1,0-18.5A13,13,0,0,1,217.74,359.37ZM356.63,296.6a11.12,11.12,0,0,1-15.74,0l-79.33-79.31A8.18,8.18,0,0,0,250,228.84l85.46,85.45a11.14,11.14,0,0,1,0,15.75,11.17,11.17,0,0,1-15.76,0l-14.41-14.42-.24-.25-.08-.06L238.69,249a8.17,8.17,0,1,0-11.56,11.56l66.48,66.48a11.14,11.14,0,0,1-15.86,15.64l-72.08-72.09a8.18,8.18,0,1,0-11.57,11.56l53.44,53.44,0,.05a11.14,11.14,0,0,1-7.88,19,11.35,11.35,0,0,1-2.11-.21,29.41,29.41,0,0,0-29.09-33.78h-.66a29.39,29.39,0,0,0-29.4-30.07c-.49,0-1,0-1.47,0a29.4,29.4,0,0,0-36-30.12l-5.86-5.86a112.16,112.16,0,0,1-31.06-59A41.3,41.3,0,0,0,92.55,174L78.14,159.61l82-82L180.58,98a41.7,41.7,0,0,0,29.51,12.06,42.81,42.81,0,0,0,14.65-2.58,38.18,38.18,0,0,1,7.14-1.83l-50.63,50.63a32.8,32.8,0,0,0,46.38,46.38l25.43-25.43,6.88,6.89h0l.28.28.28.28h0l.23.22,95.88,95.88a11.15,11.15,0,0,1,0,15.76Zm51.51-122A38.33,38.33,0,0,0,397.36,195a112.08,112.08,0,0,1-31.19,59.7L359.89,261l-51.74-51.73c1.13.08,2.26.14,3.39.14a41.82,41.82,0,0,0,15.94-3.1,8.18,8.18,0,0,0-6.19-15.14C300.24,199.75,275,176,272.2,173.29l-.14-.14-.29-.29h0l-.25-.25h0l-6.89-6.89,7.81-7.8a8.18,8.18,0,0,0-11.56-11.57L247.3,159.91l0,0h0l-31.2,31.2a16.44,16.44,0,0,1-23.25-23.25L246.67,114a54.22,54.22,0,0,1,60.7-11,42,42,0,0,0,46.86-8.34l11.38-11.38,66.93,66.93Zm46-25.89L366.44,61,404.52,22.9l87.74,87.73Z">
+                                            </path>
+                                            <circle cx="462.41" cy="116.88" r="8.18"></circle>
+                                            <circle cx="53.57" cy="124.96" r="8.18"></circle>
+                                        </g>
+                                    </g>
+                                </svg>Brand Partners</a><a class="qb-header__sticky-menu-link"
+                                title="Cheese Facts!"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                                    <g>
+                                        <path
+                                            d="m33.6 53.584a10.131 10.131 0 0 1 -3.324-.544 7.866 7.866 0 0 0 -7.033 1.093l-20.143 14.079-.008.009a1.794 1.794 0 0 0 -.739 1.425v34.643a8.086 8.086 0 0 0 8.952 8.036l58.33-6.3a8.242 8.242 0 0 0 6.416-4.682 5.71 5.71 0 0 1 9.592-1.011 8.126 8.126 0 0 0 7.184 3.181l25.6-2.766a8.071 8.071 0 0 0 7.215-8.037s0-30.226 0-30.491c0-43.376-46.238-46.561-46.677-46.589a1.722 1.722 0 0 0 -1.114.312l-33.568 23.479a8 8 0 0 0 -3.258 8.322c.749 3.357-3.469 5.841-7.425 5.841zm88.548 39.127a4.576 4.576 0 0 1 -4.092 4.557l-25.6 2.766a4.594 4.594 0 0 1 -4.068-1.882 9.212 9.212 0 0 0 -15.468 1.635 4.706 4.706 0 0 1 -3.656 2.76l-58.33 6.3a4.581 4.581 0 0 1 -5.077-4.557v-33l116.286-7.105zm-77.708-45.735a4.51 4.51 0 0 1 1.849-4.686l33.048-23.117c5.17.493 39.377 5.132 42.676 41.517l-111.813 6.831 15.044-10.521a4.365 4.365 0 0 1 3.884-.652 13.658 13.658 0 0 0 4.467.735c7.296.001 11.954-5.177 10.845-10.107z">
+                                        </path>
+                                        <path
+                                            d="m107.486 48.09c0-4.088-4.215-7.414-9.4-7.414s-9.4 3.326-9.4 7.414 4.215 7.414 9.4 7.414 9.4-3.326 9.4-7.414zm-15.292 0c0-2.122 2.7-3.914 5.9-3.914s5.9 1.792 5.9 3.914-2.708 3.91-5.904 3.91-5.896-1.789-5.896-3.91z">
+                                        </path>
+                                        <path
+                                            d="m75.982 46.185c0-3.547-3.483-6.327-7.929-6.327s-7.93 2.78-7.93 6.327 3.483 6.328 7.93 6.328 7.929-2.779 7.929-6.328zm-12.359 0c0-1.505 2.07-2.827 4.43-2.827s4.429 1.322 4.429 2.827-2.07 2.828-4.429 2.828-4.43-1.321-4.43-2.828z">
+                                        </path>
+                                        <path
+                                            d="m90.8 31.134c0-3.548-3.483-6.327-7.929-6.327s-7.93 2.779-7.93 6.327 3.484 6.327 7.93 6.327 7.929-2.779 7.929-6.327zm-12.359 0c0-1.506 2.071-2.827 4.43-2.827s4.429 1.321 4.429 2.827-2.07 2.827-4.429 2.827-4.427-1.321-4.427-2.827z">
+                                        </path>
+                                        <path
+                                            d="m113.211 78a7.475 7.475 0 1 0 -7.475 7.475 7.484 7.484 0 0 0 7.475-7.475zm-11.45 0a3.975 3.975 0 1 1 3.975 3.975 3.979 3.979 0 0 1 -3.975-3.975z">
+                                        </path>
+                                        <path
+                                            d="m30.956 83.728a6.637 6.637 0 1 0 -6.637 6.637 6.644 6.644 0 0 0 6.637-6.637zm-9.773 0a3.137 3.137 0 1 1 3.136 3.137 3.14 3.14 0 0 1 -3.136-3.137z">
+                                        </path>
+                                        <path
+                                            d="m60.767 86.388a8.458 8.458 0 1 0 -8.458 8.458 8.467 8.467 0 0 0 8.458-8.458zm-13.415 0a4.958 4.958 0 1 1 4.957 4.958 4.963 4.963 0 0 1 -4.957-4.958z">
+                                        </path>
+                                        <path
+                                            d="m74.94 77.52a1.762 1.762 0 0 0 0-2.48 1.808 1.808 0 0 0 -2.47 0 1.75 1.75 0 0 0 2.47 2.48z">
+                                        </path>
+                                        <path d="m53.54 56.58a1.75 1.75 0 1 0 -2.471 0 1.757 1.757 0 0 0 2.471 0z">
+                                        </path>
+                                        <path d="m97.13 92.41a1.75 1.75 0 1 0 -2.2.21 1.742 1.742 0 0 0 2.2-.21z">
+                                        </path>
+                                        <path d="m29.38 97.65a1.747 1.747 0 1 0 -2.47 0 1.739 1.739 0 0 0 2.47 0z">
+                                        </path>
+                                    </g>
+                                </svg>Cheese Facts!</a><!----></div>
+                    </div><a routerlink="/" title="QB FOOD" class="navbar-brand navbar-brand--desktop"
+                        href="https://www.qbfood.com.sg/"><img
+                            src="../assets/images/Qbfood-logo-white.svg"
+                            alt="QB FOOD" class="qb-header__logo"></a>
+                </div>
+                <div class="qb-header__nav-content">
+                    <div class="qb-header__nav-top-content">
+                        <div class="qb-header__search qb-header__search--desktop"><input type="text"
+                                placeholder="Search" id="txtsearch" name="q"
+                                class="qb-header__search-input ng-untouched ng-pristine ng-valid"><a
+                                href="javascript:void" title="search" data-event="btn-search"
+                                class="qb-header__search-icon"><img
+                                    src="../assets/images/search.svg"
+                                    alt=""></a></div><!---->
+                        <div class="qb-header__links"><a routerlink="/" title="QB FOOD"
+                                class="navbar-brand navbar-brand--mobile" href="https://www.qbfood.com.sg/"><img
+                                    src="../assets/images/Qbfood-logo-white.svg"
+                                    alt="QB FOOD" class="qb-header__logo"></a>
+                            <div class="qb-header__related-links qb-header__related-links--desktop"><a
+                                    id="QBCategoriesMenu" title="Categories"
+                                    class="qb-header__page-link sticky QBCategories"> Categories <svg version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px"
+                                        y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847"
+                                        xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+                                        c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+                                        c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z">
+                                            </path>
+                                        </g>
+                                    </svg></a><a id="aboutus" routerlink="/aboutus" title="ABOUT US"
+                                    class="qb-header__page-link sticky-hide"
+                                    href="https://www.qbfood.com.sg/aboutus">About Us </a><a id="recipe"
+                                    routerlink="/recipes" title="Recipes" class="qb-header__page-link"
+                                    href="https://www.qbfood.com.sg/recipes">Recipes</a><a id="faq" routerlink="/faqs"
+                                    title="FAQs" class="qb-header__page-link" href="https://www.qbfood.com.sg/faqs">FAQs
+                                </a><a id="contactus" routerlink="/contactus" title="Contact us"
+                                    class="qb-header__page-link" href="https://www.qbfood.com.sg/contactus">Contact Us
+                                </a><a id="membership" routerlink="/membership" title="Rewards Program"
+                                    class="qb-header__page-link" href="https://www.qbfood.com.sg/membership">Rewards
+                                    Program</a></div>
+                            <div class="qb-header__icon-links"><a href="https://api.whatsapp.com/send?phone=6597887880"
+                                    target="_blank" title="Whatsapp" class="qb-header__link-item no-active"><img
+                                        src="../assets/images/whatsapp-icon.svg"></a><a
+                                    routerlink="/auth/login" title="login" class="qb-header__link-item login-btn"
+                                    href="https://www.qbfood.com.sg/auth/login"> Login<svg
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.52 20.46" class="login-icon">
+                                        <defs></defs>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <g id="Layer_1-2-2" data-name="Layer 1-2">
+                                                    <path
+                                                        d="M9.28,0A10.16,10.16,0,0,0,.08,5.77a.77.77,0,0,0,.34,1,.77.77,0,0,0,1-.35,8.73,8.73,0,1,1,.19,8,.74.74,0,0,0-1.31.7h0A10.23,10.23,0,1,0,9.31,0Z"
+                                                        class="cls-1"></path>
+                                                    <path
+                                                        d="M0,10.39a.77.77,0,0,0,.75.75H11.26l-3.5,3.51a.75.75,0,0,0,1.06,1.06l4.79-4.79a.82.82,0,0,0,.16-.25.71.71,0,0,0,0-.57.78.78,0,0,0-.16-.24L8.81,5.07a.74.74,0,0,0-1.05,0h0a.75.75,0,0,0,0,1.06l3.51,3.51H.76a.76.76,0,0,0-.76.74Z"
+                                                        class="cls-1"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></a><!----><!----><a id="cart" routerlink="/cart" title="Cart"
+                                    class="qb-header__link-item" href="https://www.qbfood.com.sg/cart"><img
+                                        src="../assets/images/cart-icon.svg"><span
+                                        class="qb-header__cart-no">0</span><!----></a></div>
+                        </div>
+                    </div>
+                    <div class="qb-header__menu-mob"><button type="button" data-toggle="collapse"
+                            data-target="#QBfoodNavbar" aria-controls="QBfoodNavbar" aria-expanded="false"
+                            aria-label="Toggle navigation" class="navbar-toggler collapsed"><span
+                                class="navbar-toggler__line">&nbsp;</span><span
+                                class="navbar-toggler__line">&nbsp;</span><span
+                                class="navbar-toggler__line">&nbsp;</span></button><!----></div>
+                    <div id="QBfoodNavbar" class="navbar-collapse collapse" style="">
+                        <div class="qb-header__promo-text qb-header__promo-text--mobile">
+                            <p>FREE DELIVERY FOR ORDERS ABOVE $100</p>
+                        </div>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <div id="QBCategoriesMenu" title="Categories" class="nav-link QBCategories">Categories
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px"
+                                        height="451.847px" viewBox="0 0 451.847 451.847" xml:space="preserve">
+                                        <g>
+                                            <path
+                                                d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+                                    c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+                                    c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z">
+                                            </path>
+                                        </g>
+                                    </svg></div>
+                            </li>
+                            <li class="nav-item"><a id="bestseller" title="Best Sellers" class="nav-link"
+                                    href="https://www.qbfood.com.sg/bestseller">Best Sellers</a></li>
+                            <li class="nav-item"><a id="specialoffers" title="Special Offers" class="nav-link"
+                                    href="https://www.qbfood.com.sg/specialoffers">Special Offers</a></li>
+                            <li class="nav-item"><a id="bulkbuy" title="Bulk Buy" class="nav-link">Bulk Buy</a></li>
+                            <li class="nav-item"><a id="bookvisit" title="Available Slots" class="nav-link">Available
+                                    Slots</a></li>
+                            <li class="nav-item"><a id="brandpartners" routerlink="/brandpartners"
+                                    title="Brand Partners" class="nav-link"
+                                    href="https://www.qbfood.com.sg/brandpartners">Brand Partners</a></li>
+                            <li class="nav-item"><a id="microsite" class="nav-link" title="Cheese Facts!"
+                                    href="https://www.qbfood.com.sg/microsite/cheese">Cheese Facts!</a></li><!---->
+                        </ul>
+                        <ul class="navbar-nav navbar-nav--mobile mr-auto">
+                            <li class="nav-item"><a id="recipe" routerlink="/recipes" title="Recipes" class="nav-link"
+                                    href="https://www.qbfood.com.sg/recipes">Recipes</a></li>
+                            <li class="nav-item"><a id="faq" routerlink="/faqs" title="FAQs" class="nav-link"
+                                    href="https://www.qbfood.com.sg/faqs">FAQs</a></li>
+                            <li class="nav-item"><a id="contactus" routerlink="contactus" title="Contact Us"
+                                    class="nav-link" href="https://www.qbfood.com.sg/contactus">Contact Us</a></li>
+                            <li class="nav-item"><a id="membership" routerlink="/membership" title="Rewards Program"
+                                    class="nav-link" href="https://www.qbfood.com.sg/membership">Rewards Program</a>
+                            </li>
+                        </ul>
+                        <div class="qb-header__promo-text qb-header__promo-text--desk">
+                            <p>FREE DELIVERY FOR ORDERS ABOVE $100</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="QBCategories-expan" class="qb-header__Categories">
+                <div class="qb-header__Categories-outer">
+                    <div class="qb-header__Categories-box">
+                        <div class="qb-header__Categories-list">
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/chilled-beef/5"> Chilled Beef
+                                    </a>
+                                    <div class="qb-header__Categories-expand" id="id0"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item disabled" title="tri-tip"
+                                        href="https://www.qbfood.com.sg/productscategory/tri-tip/298"> tri-tip </a><a
+                                        class="qb-header__Categories-item disabled" title="oyster-blade"
+                                        href="https://www.qbfood.com.sg/productscategory/oyster-blade/299"> oyster-blade
+                                    </a><a class="qb-header__Categories-item" title="Ribeye"
+                                        href="https://www.qbfood.com.sg/productscategory/ribeye/231"> Ribeye </a><a
+                                        class="qb-header__Categories-item" title="Striploin"
+                                        href="https://www.qbfood.com.sg/productscategory/striploin/232"> Striploin
+                                    </a><a class="qb-header__Categories-item" title="Flank"
+                                        href="https://www.qbfood.com.sg/productscategory/flank/233"> Flank </a><a
+                                        class="qb-header__Categories-item" title="Chuck"
+                                        href="https://www.qbfood.com.sg/productscategory/chuck/234"> Chuck </a><a
+                                        class="qb-header__Categories-item" title="Tenderloin"
+                                        href="https://www.qbfood.com.sg/productscategory/tenderloin/235"> Tenderloin
+                                    </a><a class="qb-header__Categories-item disabled" title="Shin Shank"
+                                        href="https://www.qbfood.com.sg/productscategory/minced/236"> Shin Shank </a><a
+                                        class="qb-header__Categories-item" title="Cubes"
+                                        href="https://www.qbfood.com.sg/productscategory/cubes/237"> Cubes </a><a
+                                        class="qb-header__Categories-item" title="Brisket"
+                                        href="https://www.qbfood.com.sg/productscategory/brisket/238"> Brisket </a><a
+                                        class="qb-header__Categories-item" title="Ribs"
+                                        href="https://www.qbfood.com.sg/productscategory/ribs/239"> Ribs </a><a
+                                        class="qb-header__Categories-item" title="Short Rib"
+                                        href="https://www.qbfood.com.sg/productscategory/short-rib/240"> Short Rib
+                                    </a><a class="qb-header__Categories-item" title="Rump / Rump Cap"
+                                        href="https://www.qbfood.com.sg/productscategory/rump/241"> Rump / Rump Cap
+                                    </a><!----></div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/chilled-lamb/12"> Chilled Lamb
+                                    </a>
+                                    <div class="qb-header__Categories-expand" id="id1"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Bone In Shoulder Rack "
+                                        href="https://www.qbfood.com.sg/productscategory/bone-in-shoulder-rack/242">
+                                        Bone In Shoulder Rack </a><a class="qb-header__Categories-item"
+                                        title="Bone In Rack"
+                                        href="https://www.qbfood.com.sg/productscategory/bone-in-rack/243"> Bone In Rack
+                                    </a><a class="qb-header__Categories-item" title="Boneless Shoulder"
+                                        href="https://www.qbfood.com.sg/productscategory/boneless-shoulder/244">
+                                        Boneless Shoulder </a><a class="qb-header__Categories-item" title="Leg"
+                                        href="https://www.qbfood.com.sg/productscategory/boneless-leg/245"> Leg </a><a
+                                        class="qb-header__Categories-item" title="Tenderloin"
+                                        href="https://www.qbfood.com.sg/productscategory/lamb-Tenderloin/296">
+                                        Tenderloin </a><!----></div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/frozen-meat/48"> Frozen Meat
+                                    </a>
+                                    <div class="qb-header__Categories-expand" id="id2"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Beef"
+                                        href="https://www.qbfood.com.sg/productscategory/beef/246"> Beef </a><a
+                                        class="qb-header__Categories-item" title="Lamb"
+                                        href="https://www.qbfood.com.sg/productscategory/lamb/247"> Lamb </a><a
+                                        class="qb-header__Categories-item" title="Chicken"
+                                        href="https://www.qbfood.com.sg/productscategory/chicken/248"> Chicken </a><a
+                                        class="qb-header__Categories-item disabled" title="Turkey"
+                                        href="https://www.qbfood.com.sg/productscategory/turkey/249"> Turkey </a><a
+                                        class="qb-header__Categories-item" title="Pork"
+                                        href="https://www.qbfood.com.sg/productscategory/pork/250"> Pork </a><a
+                                        class="qb-header__Categories-item" title="Shabu Shabu"
+                                        href="https://www.qbfood.com.sg/productscategory/shabu-shabu/251"> Shabu Shabu
+                                    </a><a class="qb-header__Categories-item disabled" title="Duck"
+                                        href="https://www.qbfood.com.sg/productscategory/duck/297"> Duck </a><!---->
+                                </div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/sausages-n-bacon/54"> Sausages
+                                        &amp; Bacon </a>
+                                    <div class="qb-header__Categories-expand" id="id3"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Sausages"
+                                        href="https://www.qbfood.com.sg/productscategory/sausages/262"> Sausages </a><a
+                                        class="qb-header__Categories-item" title="Pepperoni"
+                                        href="https://www.qbfood.com.sg/productscategory/pepperoni/263"> Pepperoni
+                                    </a><a class="qb-header__Categories-item" title="Bacon"
+                                        href="https://www.qbfood.com.sg/productscategory/bacon/264"> Bacon </a><a
+                                        class="qb-header__Categories-item" title="Ham"
+                                        href="https://www.qbfood.com.sg/productscategory/ham/265"> Ham </a><a
+                                        class="qb-header__Categories-item" title="Salami"
+                                        href="https://www.qbfood.com.sg/productscategory/salami/266"> Salami </a><!---->
+                                </div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/cheese-n-dairy/53"> Cheese
+                                        &amp; Dairy </a>
+                                    <div class="qb-header__Categories-expand" id="id4"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Natural Cheese"
+                                        href="https://www.qbfood.com.sg/productscategory/natural-cheese/254"> Natural
+                                        Cheese </a><a class="qb-header__Categories-item" title="Processed Cheese"
+                                        href="https://www.qbfood.com.sg/productscategory/processed-cheese/255">
+                                        Processed Cheese </a><a class="qb-header__Categories-item" title="Fresh Cheese"
+                                        href="https://www.qbfood.com.sg/productscategory/fresh-cheese/256"> Fresh Cheese
+                                    </a><a class="qb-header__Categories-item" title="Sheep &amp; Goat Cheese"
+                                        href="https://www.qbfood.com.sg/productscategory/sheep-n-goat-cheese/257"> Sheep
+                                        &amp; Goat Cheese </a><a class="qb-header__Categories-item"
+                                        title="Dessert Cheese"
+                                        href="https://www.qbfood.com.sg/productscategory/dessert-cheese/258"> Dessert
+                                        Cheese </a><a class="qb-header__Categories-item" title="Cooking Cream"
+                                        href="https://www.qbfood.com.sg/productscategory/cooking-cream/259"> Cooking
+                                        Cream </a><a class="qb-header__Categories-item" title="Yoghurt"
+                                        href="https://www.qbfood.com.sg/productscategory/yoghurt/260"> Yoghurt </a><a
+                                        class="qb-header__Categories-item" title="Butter"
+                                        href="https://www.qbfood.com.sg/productscategory/butter/261"> Butter </a><!---->
+                                </div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/seafood/52"> Seafood </a>
+                                    <div class="qb-header__Categories-expand" id="id5"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Fish"
+                                        href="https://www.qbfood.com.sg/productscategory/fish/252"> Fish </a><a
+                                        class="qb-header__Categories-item" title="Prawn"
+                                        href="https://www.qbfood.com.sg/productscategory/prawn/253"> Prawn </a><!---->
+                                </div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/pantry-essentials/55"> Pantry
+                                        Essentials </a>
+                                    <div class="qb-header__Categories-expand" id="id6"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Sauces &amp; Vinegar"
+                                        href="https://www.qbfood.com.sg/productscategory/sauces-n-vinegar/267"> Sauces
+                                        &amp; Vinegar </a><a class="qb-header__Categories-item" title="Cooking Oil"
+                                        href="https://www.qbfood.com.sg/productscategory/cooking-oil/268"> Cooking Oil
+                                    </a><a class="qb-header__Categories-item" title="Canned Goods"
+                                        href="https://www.qbfood.com.sg/productscategory/canned-goods/269"> Canned Goods
+                                    </a><a class="qb-header__Categories-item" title="Herbs &amp; Spices"
+                                        href="https://www.qbfood.com.sg/productscategory/herbs-n-spices/270"> Herbs
+                                        &amp; Spices </a><a class="qb-header__Categories-item" title="Pasta"
+                                        href="https://www.qbfood.com.sg/productscategory/pasta/271"> Pasta </a><a
+                                        class="qb-header__Categories-item" title="Mashed Potatoes"
+                                        href="https://www.qbfood.com.sg/productscategory/mased-potatoes/272"> Mashed
+                                        Potatoes </a><a class="qb-header__Categories-item" title="Snacks"
+                                        href="https://www.qbfood.com.sg/productscategory/snacks/273"> Snacks </a><a
+                                        class="qb-header__Categories-item" title="Spreads"
+                                        href="https://www.qbfood.com.sg/productscategory/spreads/274"> Spreads </a><a
+                                        class="qb-header__Categories-item" title="Biscuits &amp; Cereal Bars"
+                                        href="https://www.qbfood.com.sg/productscategory/biscuits-n-cereal-bars/275">
+                                        Biscuits &amp; Cereal Bars </a><a class="qb-header__Categories-item disabled"
+                                        title="Flour" href="https://www.qbfood.com.sg/productscategory/flour/276"> Flour
+                                    </a><!----></div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/plant-based-products/149">
+                                        Plant Based Products </a>
+                                    <div class="qb-header__Categories-expand" id="id7"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Plant Based Sausage"
+                                        href="https://www.qbfood.com.sg/productscategory/plant-based-sausage/277"> Plant
+                                        Based Sausage </a><a class="qb-header__Categories-item disabled"
+                                        title="Plant Based Cheese"
+                                        href="https://www.qbfood.com.sg/productscategory/plant-based-cheese/278"> Plant
+                                        Based Cheese </a><a class="qb-header__Categories-item"
+                                        title="Plant Based Finger Food"
+                                        href="https://www.qbfood.com.sg/productscategory/plant-based-finger-food/279">
+                                        Plant Based Finger Food </a><a class="qb-header__Categories-item"
+                                        title="Plant Based Patties"
+                                        href="https://www.qbfood.com.sg/productscategory/plant-based-patties/280"> Plant
+                                        Based Patties </a><a class="qb-header__Categories-item"
+                                        title="Plant Based Minced"
+                                        href="https://www.qbfood.com.sg/productscategory/plant-based-minced/281"> Plant
+                                        Based Minced </a><a class="qb-header__Categories-item disabled"
+                                        title="Plant Based Sauce"
+                                        href="https://www.qbfood.com.sg/productscategory/plant-based-sauce/282"> Plant
+                                        Based Sauce </a><!----></div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/beverages/207"> Beverages </a>
+                                    <div class="qb-header__Categories-expand" id="id8"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Coffee"
+                                        href="https://www.qbfood.com.sg/productscategory/coffee/283"> Coffee </a><a
+                                        class="qb-header__Categories-item" title="Tea"
+                                        href="https://www.qbfood.com.sg/productscategory/tea/284"> Tea </a><a
+                                        class="qb-header__Categories-item" title="Water"
+                                        href="https://www.qbfood.com.sg/productscategory/water/285"> Water </a><a
+                                        class="qb-header__Categories-item" title="Wine &amp; Spirits"
+                                        href="https://www.qbfood.com.sg/productscategory/wine-n-spirits/286"> Wine &amp;
+                                        Spirits </a><!----></div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/assorted-frozen/211"> Assorted
+                                        Frozen </a>
+                                    <div class="qb-header__Categories-expand" id="id9"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Vegetables"
+                                        href="https://www.qbfood.com.sg/productscategory/vegetables/287"> Vegetables
+                                    </a><a class="qb-header__Categories-item" title="Frozen Fruits"
+                                        href="https://www.qbfood.com.sg/productscategory/frozen-fruits/288"> Frozen
+                                        Fruits </a><a class="qb-header__Categories-item" title="Ready to Cook"
+                                        href="https://www.qbfood.com.sg/productscategory/ready-to-cook/289"> Ready to
+                                        Cook </a><a class="qb-header__Categories-item" title="Pizza"
+                                        href="https://www.qbfood.com.sg/productscategory/pizza/290"> Pizza </a><a
+                                        class="qb-header__Categories-item" title="Pide Bread"
+                                        href="https://www.qbfood.com.sg/productscategory/pide-bread/291"> Pide Bread
+                                    </a><!----></div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/dessert/228"> Dessert </a>
+                                    <div class="qb-header__Categories-expand" id="id10"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Pancakes"
+                                        href="https://www.qbfood.com.sg/productscategory/pancakes/292"> Pancakes </a><a
+                                        class="qb-header__Categories-item" title="Crepes"
+                                        href="https://www.qbfood.com.sg/productscategory/crepes/293"> Crepes </a><!---->
+                                </div>
+                            </div>
+                            <div class="qb-header__Categories-wrapper">
+                                <div class="qb-header__Categories-head categoryLink active"><a
+                                        href="https://www.qbfood.com.sg/productscategory/bundle-sets/301"> Bundle Sets
+                                    </a>
+                                    <div class="qb-header__Categories-expand" id="id11"><i
+                                            class="fa fa-chevron-right"></i></div>
+                                </div>
+                                <div class="qb-header__Categories-links categoryLink"><a
+                                        class="qb-header__Categories-item" title="Cheese Platter"
+                                        href="https://www.qbfood.com.sg/productscategory/cheese-platter/307"> Cheese
+                                        Platter </a><a class="qb-header__Categories-item" title="Give a Gift Set"
+                                        href="https://www.qbfood.com.sg/productscategory/give-a-gift-set/310"> Give a
+                                        Gift Set </a><a class="qb-header__Categories-item" title="Dinner Set"
+                                        href="https://www.qbfood.com.sg/productscategory/dinner-set/312"> Dinner Set
+                                    </a><!----></div>
+                            </div><!---->
+                        </div>
+                    </div>
+                </div>
+                <div class="qb-header__fade-bg"></div>
+                <div class="qb-header__close"><img
+                        src="QB%20Food%20Singapore%20Buy%20Beef%20Online%20with%20Islandwide%20Delivery_files/close-icon.svg"
+                        alt="x" class="qb-header__close-icon"></div>
+            </div>
+        </header>
+        <div class="mobile-overlay"></div>
+    </div>
+   <!-- body content end -->
+
+    <!-- scripts -->
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/scripts.cat.js"></script>
+    <!-- scripts -->
+  </body>
+</html>

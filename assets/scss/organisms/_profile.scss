@@ -1,0 +1,103 @@
+
+.qbf-profile{
+    padding: $spacer-4 0 $spacer-4;
+    background-color: #F0E4C9;
+    &__in{
+        display: flex;
+    }
+    &__info{
+        width:100%;
+        display: flex;
+        position: relative;
+        padding: 0 $spacer-3;
+    }
+    &__body{
+        display: flex;
+    }
+    &__pic{
+        width:45%;
+        transform: translate(0px, -50%);
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.34);
+-webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.34);
+-moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.34);
+    }
+    &__dec{
+        // margin-top: auto;
+        // padding: 0 0 $spacer-2 0;
+        // padding: 27% 0 $spacer-2 0;
+        width:100%;
+        padding-right: $spacer-3;
+        display: flex;
+        flex-direction: column;
+        // align-self: flex-end;
+    }
+    &__qr{
+        width:50%;
+        font-size: 0;
+        display: flex;
+        align-items: flex-start;
+        padding-right: 10px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            // max-width:125px;
+             border: 1px solid #AAAAAA;
+            // scale: 1.2;
+        }
+    }
+    &__name{
+        // font-size:18px;
+        font-size: 30px;
+        color: $color-black;
+        font-weight: $font-bold;
+        line-height: 32px;
+        margin-bottom: $spacer-2;
+    }
+    &__desg{
+        font-size: 14px;
+        color: $color-green;
+        font-weight:$font-bold;
+        margin-bottom: $spacer-1;
+    }
+    &__company{
+        font-size: 13px;
+        color: $color-black;
+        font-weight:$font-regular;
+        line-height: 18px;
+    }
+    &__share{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        &-icn1{
+            max-width:14px;
+        }
+        &-icn2{
+            max-width:11px;
+        }
+    }
+}
+.qbf-QrShare{
+    display: flex;
+    padding: $spacer-3 0;
+    &-in{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@include mobile{
+    .qbf-profile{
+        &__qr{
+            img{
+                width: 100%;
+                max-width: none;
+            }
+        }
+        &__name{
+            font-size:5vw;
+            line-height:5vw;
+        }
+    }
+}

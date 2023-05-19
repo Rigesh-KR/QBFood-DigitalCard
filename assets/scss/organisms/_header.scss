@@ -1,0 +1,33 @@
+.qbf-header{
+    background-color: $color-green;
+    padding: $spacer-4 0 $spacer-3;
+    font-size: 0;
+    // border-bottom: 3px solid $color-light-yellow;
+    &__in{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo {
+        width: 120px;
+        font-size: 0;
+        // min-width: 120px;
+    }
+}
+.qbf-hero-text{
+    background-color: #7a1825;
+    color: $color-white;
+    padding: $spacer-3 $spacer-4;
+    text-align: center;
+    font-size: 13px;
+    line-height:22px;
+    strong{
+        font-size:20px;
+    }
+    &__logo{
+        img{
+            width:80px;
+            vertical-align: top;
+        }
+    }
+}

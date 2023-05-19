@@ -1,0 +1,26 @@
+.qbf-email{
+    &__warp{
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    &__in{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title{
+        font-size: 18px;
+        font-weight: $font-regular;
+        margin-bottom: $spacer-3;
+    }
+}
+.qbf-mainbody{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}

@@ -1,0 +1,33 @@
+.qbf-btn{
+    &__group{
+        &-in{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    background-color: $color-green;
+    border-radius: 5px;
+    width: 100%;
+    padding: 12px 25px;
+    font-size: 26px;
+    font-weight: $font-bold;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    &-icn{
+        width:10px;
+        margin-left: 10px;
+    }
+    &:focus{
+        color:$color-white;
+    }
+    &:hover{
+        color:$color-white;
+        border-color: #006400;
+        background-color: #006400;
+    }
+    &--sm{
+        width: auto;
+    }
+}
